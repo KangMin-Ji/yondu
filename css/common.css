@@ -1,0 +1,223 @@
+.blind {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+:root{
+  --font_h2:40px;
+  --font_h3:55px;
+  --font_p_big:28px;
+  --font_p_middle:20px;
+  --font_p_small:18px;
+  --font_p_small_small:18px;
+  --font_p: 16px;
+}
+
+/* slide-btn */
+.main_vis .swiper-pagination .pagination .main-button .circle_con,
+.section_4 .swiper-pagination .pagination .second-button .circle_con {
+  display: flex;
+  height: 45px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.main_vis .swiper-pagination .pagination .main-button-prev .circle_con::after,
+.section_4 .swiper-pagination .pagination .second-button-prev .circle_con::after {
+  content: "";
+  margin-left: 7px;
+  position: relative;
+  width: 55px;
+  height: 1px;
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.main_vis .swiper-pagination .pagination .main-button-next .circle_con::before,
+.section_4 .swiper-pagination .pagination .second-button-next .circle_con::before {
+  content: "";
+  margin-right: 7px;
+  position: relative;
+  width: 55px;
+  height: 1px;
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.main_vis .swiper-pagination .pagination .main-button .triangle,
+.section_4 .swiper-pagination .pagination .second-button .triangle {
+  width: 0;
+  height: 0;
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.main_vis .swiper-pagination .pagination .main-button-prev .triangle,
+.section_4 .swiper-pagination .pagination .second-button-prev .triangle {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  margin-left: 19.6px;
+}
+
+.main_vis .swiper-pagination .pagination .main-button-next .triangle,
+.section_4 .swiper-pagination .pagination .second-button-next .triangle {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  margin-right: 19.6px;
+}
+
+.main_vis .swiper-pagination .pagination .main-button-next .triangle,
+.section_4 .swiper-pagination .pagination .second-button-next .triangle {
+  margin-right: 19.5px;
+}
+
+.main_vis .swiper-pagination .pagination .main-button:hover .triangle,
+.section_4 .swiper-pagination .pagination .second-button:hover .triangle {
+  margin: 0;
+}
+
+.main_vis .swiper-pagination .pagination .main-button .circle,
+.section_4 .swiper-pagination .pagination .second-button .circle {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+}
+
+.main_vis .swiper-pagination .pagination .main-button-next .circle,
+.section_4 .swiper-pagination .pagination .second-button-next .circle {
+  right: 0;
+}
+
+.main_vis .swiper-pagination .pagination .main-button .circle circle,
+.section_4 .swiper-pagination .pagination .second-button .circle circle {
+  stroke-dasharray: 95;
+  stroke-dashoffset: 0;
+  transition: all 0.6s ease-in;
+}
+
+.main_vis .swiper-pagination .pagination .main-button:hover circle,
+.section_4 .swiper-pagination .pagination .second-button:hover circle {
+  stroke-dashoffset: 95;
+}
+
+.main_vis .swiper-pagination .pagination .main-button:hover .circle_con::after,
+.main_vis .swiper-pagination .pagination .main-button:hover .circle_con::before,
+.section_4 .swiper-pagination .pagination .second-button:hover .circle_con::after,
+.section_4 .swiper-pagination .pagination .second-button:hover .circle_con::before {
+  width: 75px;
+}
+
+.section .title_wrap {
+  text-align: center;
+  padding-bottom: 40px;
+  font-weight: 600;
+  font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.section .title_wrap span {
+  font-size: var(--font_p);
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+.section .title_wrap span {
+  font-size: var(--font_p_small);
+  color: #638738;
+}
+.section .title_wrap h2 {
+  font-size: var(--font_h2);
+  padding: 15px 0;
+  color: #2b2b2b;
+}
+
+.section_1 .left_bottom .txt_wrap .txt_inner,
+.section_2 .m_wrap .middle_area .txt_inner {
+  height: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 50px 10px 10px;
+}
+
+.section_1 .left_bottom .txt_inner em,
+.section_2 .m_wrap .middle_area .txt_inner em {
+  display: inline-block;
+  font-size: 42px;
+  color: #ffedc6;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin: 10px 5px 20px;
+}
+
+.section_1 .left_bottom .txt_inner span,
+.section_2 .m_wrap .middle_area .txt_inner span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 5px;
+  padding-bottom: 10px;
+}
+
+
+.section_3,
+.section_4,
+.section_5 {
+  background: #eaf6ce;
+}
+
+@media screen and (max-width:1200px) {
+  :root{
+    --font_h2:40px;
+    --font_h3:55px;
+    --font_p_big:20px;
+    --font_p_middle:16px;
+    --font_p_small:16px;
+    --font_p_small_small:18px;
+    --font_p: 16px;
+  }
+  
+  /* display none */
+  header .curr_guage,
+  header .page_pagination,
+  header .menu_wrap .right_area,
+  header .menu_wrap .menu li a.go_btn::after {
+    display: none;
+  }
+
+  .main_vis .subSwiper,
+  .main_vis .swiper-pagination .guage_bar {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width:768px) {
+  :root{
+    --font_h2:30px;
+    --font_h3:55px;
+    --font_p_big:20px;
+    --font_p_middle:16px;
+    --font_p_small:18px;
+    --font_p_small_small:18px;
+    --font_p: 16px;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  :root{
+    --font_h2:30px;
+    --font_h3:550px;
+    --font_p_big:20px;
+    --font_p_middle:16px;
+    --font_p_small:18px;
+    --font_p_small_small:16px;
+    --font_p: 16px;
+  }
+  .section_3 .recipe_wrap strong{
+    font-size: 30px;
+  }
+}
