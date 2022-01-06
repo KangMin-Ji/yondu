@@ -59,22 +59,13 @@ header .menu_btn.on{
   top: auto;
   left: auto;
 }
-
-header .menu_btn .menu_btn_txt {
+header .menu_btn .menu_btn_txt{
   display: none;
 }
-
 header .menu_btn .btn_wrap {
   width: 25px;
   position: relative;
 }
-
-/* header .menu_btn .btn_wrap.fixed {
-  position: fixed;
-  right: auto;
-  bottom: auto;
-  pointer-events: none;
-} */
 header .menu_btn span {
   height: 2px;
   background: #fff;
@@ -198,21 +189,17 @@ header .menu_wrap .menu_bg_txt {
   opacity: 0.05;
   text-align: left;
 }
-
-header .menu_wrap .menu_btn_txt{
-  display: none;
-}
 header .menu_wrap .menu {
   position: relative;
   z-index: 1;
   font-size: 42px;
   line-height: 1.4;
-  font-family: 'Poppins', sans-serif;
 }
 
 header .menu_wrap .menu li {
   margin-top: 10px;
   overflow: hidden;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 header .menu_wrap .menu li:first-child {
@@ -443,9 +430,7 @@ footer .inner .copyright {
   left: 50%;
   transform: translate(-50%, -50%);
 } */
-@media screen and (max-width: 1200px) {
-
-
+@media screen and (max-width: 1199px) {
   main {
     border-left: 0px solid transparent;
     border-right: 0px solid transparent;
@@ -476,65 +461,22 @@ footer .inner .copyright {
     background: url(../images/m_logo.png) no-repeat;
     width: 110px;
     height: 28px;
-    /* height: 76px; */
     background-size: contain;
   }
 
   header .menu_btn {
-    width: 80px;
-    /* width: 20px; */
-    height: 100%;
-    position: initial;
     transform: translate(0px, 0px);
   }
-  
   header .menu_btn .menu_btn_txt{
     display: block;
     float: left;
-    width: 70px;
-    height: 12px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* height: 12px; */
-  }
-  header .menu_btn_txt .txt{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  header .menu_btn .menu_txt {
-    width: 70px;
-    height: 12px;
-    /* height: 2px; */
-    /* display: block; */
-    background: transparent;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    margin-right: 10px;
     color: #fff;
-    letter-spacing: -1px;
-    font-size: 13px;
-    text-transform: uppercase;
-    transition: 0.3s;
-    opacity: 0;
+    font-size: 12px;
   }
-
-  header .menu_btn .menu_txt.on {
-    display: block;
-    opacity: 1;
-    width: 70px;
-    height: 12px;
+  header .menu_btn .btn_wrap{
+    float: left;
   }
-  header .menu_btn .menu_txt .word{
-    display: block;
-  }
-  header .menu_btn .btn_wrap {
-    position: absolute;
-    left: 45px;
-  }
-
   header .sns_wrap {
     display: none;
   }
@@ -544,7 +486,6 @@ footer .inner .copyright {
     height: 100vh;
     top: -100vh;
     left: 0;
-    /* visibility: hidden; */
   }
 
   header .menu_wrap {

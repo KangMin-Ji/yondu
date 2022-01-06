@@ -169,10 +169,10 @@
   background: #eaf6ce;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1199px) {
   :root{
     --font_h2:40px;
-    --font_h3:55px;
+    --font_h3:40px;
     --font_p_big:20px;
     --font_p_middle:16px;
     --font_p_small:16px;
@@ -188,16 +188,16 @@
     display: none;
   }
 
-  .main_vis .subSwiper,
+  /* .main_vis .subSwiper,
   .main_vis .swiper-pagination .guage_bar {
     visibility: hidden;
-  }
+  } */
 }
 
 @media screen and (max-width:768px) {
   :root{
     --font_h2:30px;
-    --font_h3:55px;
+    --font_h3:35px;
     --font_p_big:20px;
     --font_p_middle:16px;
     --font_p_small:18px;
@@ -210,7 +210,7 @@
 @media screen and (max-width: 450px) {
   :root{
     --font_h2:30px;
-    --font_h3:550px;
+    --font_h3:24px;
     --font_p_big:20px;
     --font_p_middle:16px;
     --font_p_small:18px;
