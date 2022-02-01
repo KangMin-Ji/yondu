@@ -1,7 +1,7 @@
 $(function () {
   //scroll function
   $(window).scroll(function () {
-    let curr = $(window).scrollTop();
+    const curr = $(window).scrollTop();
     total = $('body').outerHeight() - $(window).height();
     $('.curr_guage .guage_count').html(parseInt(curr / total * 100) + "%");
 
@@ -10,8 +10,8 @@ $(function () {
     } else {
       $('.curr_guage').removeClass('on');
     }
-    let repeat = 30;
-    let degree = parseInt((curr) / total * 360) * repeat;
+    const repeat = 30;
+    let degree = parseInt(curr / total * 360) * repeat;
     let _deg = degree + 'deg';
 
     $('.curr_guage img').css('transform', 'rotate(' + _deg + ')');
